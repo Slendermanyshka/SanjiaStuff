@@ -32,7 +32,7 @@
     &::before{
         display: block;
         content: "";
-        height: 120px;
+        height: 135px;
         background-color: #fff;
         background-position: center;
         background-repeat: no-repeat;
@@ -41,20 +41,20 @@
     }
 }
 .specifications__item:nth-child(1)::before{
-    background-image: url(./images/icons/sprite.svg#instagram);
+    background-image: url(../../images/icons/separate_icons/tools.svg);
 }
 .specifications__item:nth-child(2)::before{
-    background-image: url(../../images/icons/sprite.svg#instagram);
+    background-image: url(../../images/icons/separate_icons/desktop.svg);
 }
 .specifications__item:nth-child(3)::before{
-    background-image: url(../../images/icons/sprite.svg#);
+    background-image: url(../../images/icons/separate_icons/lightbulb.svg);
 }
 .specifications__item:nth-child(4)::before{
-    background-image: url(../../images/icons/sprite.svg#);
+    background-image: url(../../images/icons/separate_icons/genius.svg);
 }
 .specifications__item:nth-child(5)::before{
-    background-image: url(../../images/icons/sprite.svg#);
+    background-image: url(../../images/icons/separate_icons/briefcase.svg);
 }
 .specifications__item:nth-child(6)::before{
-    background-image: url(../../images/icons/sprite.svg#);
+    background-image: url(../../images/icons/separate_icons/download.svg);
 }
