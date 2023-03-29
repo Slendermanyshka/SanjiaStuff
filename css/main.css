@@ -29,7 +29,7 @@ body {
   margin: 0px;
 }
 
-.list, .client__list, .team__list, .team__box, .activities__list, .specifications li, .menu-social__link, .navigation-menu, .menu-link, .contacts li, .menu-navigation li {
+.list, .client__list, .team__list, .team__box, .activities__list, .menu-social__link, .navigation-menu, .menu-link, .contacts li, .menu-navigation li {
   list-style-type: none;
 }
 
@@ -52,7 +52,7 @@ a {
   margin-bottom: 50px;
 }
 
-.normal-text, .modal__send-button, .modal__title, .activities__description, .specifications p, .specifications h3, .hat button, .footer__innard a {
+.normal-text, .modal__send-button, .modal__title, .activities__description, .specifications p, .hat button, .footer__innard a {
   font-style: normal;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -80,7 +80,7 @@ a {
   margin: 0 auto;
 }
 
-.list, .client__list, .team__list, .team__box, .activities__list, .specifications li, .menu-social__link, .navigation-menu, .menu-link, .contacts li, .menu-navigation li {
+.list, .client__list, .team__list, .team__box, .activities__list, .menu-social__link, .navigation-menu, .menu-link, .contacts li, .menu-navigation li {
   list-style-type: none;
 }
 
@@ -580,39 +580,11 @@ a {
   padding: 94px 0;
 }
 .specifications h3 {
-  font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  color: #2d3033;
   text-transform: uppercase;
-  color: #212121;
-  margin-bottom: 10px;
-  margin-top: 30px;
-}
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .specifications h3 {
-    text-align: center;
-  }
-}
-.specifications li {
-  display: inline;
-}
-@media screen and (min-width: 1200px) {
-  .specifications li {
-    margin-right: 30px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .specifications {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .specifications {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  font-weight: 700;
+  text-align: center;
 }
 
 .specifications p {
@@ -623,72 +595,47 @@ a {
 
 .specifications__list {
   display: flex;
-}
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .specifications__list {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .specifications__list {
-    flex-wrap: wrap;
-    flex-basis: 50%;
-    align-items: center;
-    justify-content: center;
-  }
+  flex-wrap: wrap;
+  flex-basis: 33.3333333333%;
+  justify-content: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .specifications__item {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .specifications__item {
-    width: 354px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  .specifications__item:nth-child(even) {
-    margin-right: 0px;
-  }
-  .specifications__item:nth-child(3) {
-    margin-bottom: 0%;
-  }
-  .specifications__item:nth-child(4) {
-    margin-bottom: 0%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .specifications__item {
-    width: 270px;
-  }
+.specifications__item {
+  width: 370px;
 }
 .specifications__item::before {
   display: block;
   content: "";
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
+  fill: #D10220;
+  color: #D10220;
 }
 
 .specifications__item:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
+  background-image: url(./images/icons/sprite.svg#instagram);
 }
 
 .specifications__item:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
+  background-image: url(../../images/icons/sprite.svg#instagram);
 }
 
 .specifications__item:nth-child(3)::before {
-  background-image: url(../images/diagram.svg);
+  background-image: url(../../images/icons/sprite.svg#);
 }
 
 .specifications__item:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
+  background-image: url(../../images/icons/sprite.svg#);
+}
+
+.specifications__item:nth-child(5)::before {
+  background-image: url(../../images/icons/sprite.svg#);
+}
+
+.specifications__item:nth-child(6)::before {
+  background-image: url(../../images/icons/sprite.svg#);
 }
 
 .activities {
