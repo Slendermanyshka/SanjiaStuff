@@ -1,46 +1,59 @@
-.activities{
-    padding-bottom: 94px;
-}
-@media screen and (max-width:1200px){
-    .activities{
-        display: none;
-    }
-}
+
 .activities__title{
     @extend .h-title;
 }
 .activities__list{
-    @extend .list; 
     display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100%/3);
     justify-content: center;
 }
 .activites__images{
+    overflow: hidden;
+    width: calc(100%/4);
+    
     position: relative;
     display: inline-flex;
+
+    
+   
+}
+.activites__images:hover .activities__description{
+    display: flex;
+    
+}
+
+.activites__images:hover .activity_image{
+
+        transform: scale(1.2);
+    
+}
+.activity_image{
+    transition: transform .2s;
 }
 .activities__description{
+    display: none;
     @extend .normal-text;
     position: absolute;
-    display: flex;
     margin: 0;
     justify-content: center;
     align-items: center;
     
-    bottom: 0;
-    
+    top: 0;
+    left: 0;
+
+
+    transition: transform 0.5s;
     color: $background-color;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
+    transition: .5s ease;
 
     width: 100%;
-    height: 70px;
-    background: rgba(47, 48, 58, 0.8);
-    
+    height: 100%;
+    background: rgba(232, 69, 69, 0.9);  
     z-index: 1;
 }
 
-.activites__images:not(:last-child) {
-    margin-right: $margin;
-}

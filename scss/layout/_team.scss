@@ -1,108 +1,40 @@
-.team {
-  padding: 94px 0;
-  background-color: #f5f4fa;
-  width: 100%;
-
-  & p {
-    font-weight: normal;
-    font-size: 16px;
-    color: #757575;
-    line-height: 18.75px;
-    margin-top: 10px;
-  }
-
-  & li:first-child {
-    margin-left: 0px;
-  }
-
-  & h2 {
-    @extend .h-title;
-  }
-
-  & ul {
-    display: flex;
-    justify-content: center;
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
+.team{
+  margin-top:25px;
 }
 
-.team__box {
-  background-color: $background-color;
-  @extend .list;
-  display: flex;
-  flex-direction: column;
-align-items: center;
-align-content: center;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-
-
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    width: 450px;
-    height: 622px;
-    &:not(:last-child) {
-      margin-bottom: $margin;
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    width: 354px;
-    height: 536px;
-    margin-right: $margin;
-    margin-bottom: $margin;
-    &:nth-child(2n) {
-      margin-right: 0px;
-    }
-    &:nth-child(3) {
-      margin-bottom: 0px;
-    }
-    &:nth-child(4) {
-      margin-bottom: 0px;
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 428px;
-
-    &:not(:last-child) {
-      margin-right: $margin;
-    }
-  }
-}
-
-.team__box h3{
-        margin-top: 30px;
-        margin-bottom: 10px;
-}
-.team__box p{
-    margin-bottom: 16px;
-}
 .team__container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  max-width: 1200px;
+    margin-inline: auto;
+    margin-bottom: 50px;
+}
+.team-text-container{
+  border-top: solid 2px #D10220;
+width: 50%;
+text-align: justify;
+padding-top: 5px;
+  & p{
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+text-indent: 20px;
+text-align: justify;
+line-height: 22.4px;
+}
 }
 
-.team__list {
-  @extend .list;
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    padding: 0px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    padding: 0px;
-  }
+.team-img-container{
+  box-sizing: border-box;
+  width: 50%;
+  margin-inline: 15px;
 }
 
+.team-img{
+  box-sizing: border-box
+}
 .team__link button {
   @extend .media-icon;
   background-color: $background-color;
