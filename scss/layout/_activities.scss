@@ -11,12 +11,8 @@
 .activites__images{
     overflow: hidden;
     width: calc(100%/4);
-    
     position: relative;
-    display: inline-flex;
-
-    
-   
+    display: inline-flex;  
 }
 .activites__images:hover .activities__description{
     display: flex;

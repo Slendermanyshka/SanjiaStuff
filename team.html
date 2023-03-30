@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title lang="ua">Вища школа педагогічної майстерності</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="css/main.min.css"/>
+</head>
+
+<body class="body">
+    <div class="stripe"></div>
+    <header class="header" id="header">
+        <div class="icon-container">
+            <a href="" class="icon top"><img id="header-icon" src="./images/logo big.png" alt="" width="190px" height="190px"></a>
+        </div>
+        <div class="header_button-container">
+        <nav class="navigation is-open">
+            <div>
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+                <svg width="40" height="40">
+                    <use class="menu-button__open" href="./images/sprite.svg#icon-mobile-menu_24px" style="outline: black solid 2px;"></use>
+                </svg>
+            </button>
+            </div>
+        </div>
+            
+            <div class="menu-container js-menu-container" id="mobile-menu" >
+                <div class="close-buttone__container">
+                <button class="menu__button-close js-close-menu">
+                    <svg width="40" height="40px">
+                        <use href="./images/sprite.svg#icon-Close"></use>
+                    </svg>
+                </button>
+            </div>
+                <div class="menu-link__container">
+                    <ul class="menu-link">
+                        <li class="menu-link__item"><a href="./index.html">ГОЛОВНА</a></li>
+                        <li class="menu-link__item"><a href="./team.html">КОМАНДА ВШПМ</a></li>
+                        <li class="menu-link__item"><a href="./gallery.html">ФОТОГАЛЕРЕЯ</a></li>
+                        <li class="menu-link__item"><a href="./contacts.html">КОНТАКТИ</a></li>
+                    </ul>
+                </div>
+                <div class="contacts-menu__container">
+                    <ul class="navigation-menu">
+                        <li class="navigation_item"><a href="">ПОДАТИ ЗАЯВКУ</a></li>
+                        <li class="navigation_item"><a href="">ВИБРАТИ МОВУ</a></li>
+                    </ul>
+                </div>
+            </div>            
+            <ul class="menu-navigation">
+                <li class="header__item"><a href="./index.html" class="menu-navigation__link current-main">ГОЛОВНА</a></li>
+                <li class="header__item"><a href="./team.html"" class="menu-navigation__link ">КОМАНДА ВШПМ</a></li>
+                <li class="header__item"><a href="./gallery.html" class="menu-navigation__link">ФОТОГАЛЕРЕЯ</a></li>
+                <li class="header__item"><a href="./contacts.html" class="menu-navigation__link">КОНТАКТИ</a></li>
+            </ul>
+        </nav>
+        <div class="contacts__container">
+            <ul class="contacts">
+                <li class="contacts__item"><a href="" >ПОДАТИ ЗАЯВКУ</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        
+			<div class="generic-heading">
+			<h2>Команда ВШПМ</h2>
+			</div>
+
+        <section class="activities">
+            
+        </section>
+        
+    </main>
+    <footer class="footer container">
+        <div class=" footer__container">
+                <div class="footer__innard">
+                    <h3 class="footer__h3">АДРЕСА</h3>
+                    <ul>
+                        <li class="footer__text-slim">Україна, м.Одеса</li>
+                        <li class="footer__text-slim">Вул. Канатна, 112</li>
+                        <li class="footer__text-slim">Корпус В каб. 120</li>
+                    </ul>
+                </div>
+            <div class="footer__innard">
+                <h3 class="footer__h3">СОЦІАЛЬНІ МЕРЕЖІ</h3>
+                <ul class="footer__list">
+                    <li class="footer__link">
+                        <button>
+                            <svg width="20" height="20" class="footer__icon"> <use href="./images/icons/sprite.svg#facebook"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="footer__link">
+                        <button>
+                            <svg width="20" height="20" class="footer__icon"> <use href="./images/icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="footer__innard footer__text">
+                <h3 class="footer__h3">ВИЩА ШКОЛА<br>ПЕДАГОГІЧНОЇ МАЙСТЕРНОСТІ</h3>
+                <span class="footer__text-slim">Школа для лідерів, орієнтованих на якісні зміни у собі та педагогічній майстерності.</span>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__text-slim">Копірайт © 2018 <a href="" class="footer_bottom-link">ВШПМ</a>. Усі права НЕ захищені.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+            document.getElementById("header-icon").src = "./images/onaht.png";
+            document.getElementById("header-icon").width = 45;
+            document.getElementById("header-icon").height = 45;
+            document.getElementById("header").style.marginTop = "0px";
+          } else {
+            document.getElementById("header-icon").src = "./images/logo big.png";
+            document.getElementById("header-icon").width = 190;
+            document.getElementById("header-icon").height = 190;
+            document.getElementById("header").style.marginTop = "70px";
+          }
+        }
+        </script>
+</body>
+
+</html>

@@ -88,6 +88,25 @@ a {
   cursor: pointer;
 }
 
+.generic-heading {
+  display: flex;
+  justify-content: right;
+  margin-top: 140px;
+  padding-right: 100px;
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+.generic-heading h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #6c7279;
+  font-size: 34px;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+  display: inline-block;
+  padding-left: 100px;
+}
+
 .body {
   position: relative;
 }
@@ -615,27 +634,27 @@ a {
 }
 
 .specifications__item:nth-child(1)::before {
-  background-image: url(../../images/icons/separate_icons/tools.svg);
+  background-image: url(../images/icons/separate_icons/tools.svg);
 }
 
 .specifications__item:nth-child(2)::before {
-  background-image: url(../../images/icons/separate_icons/desktop.svg);
+  background-image: url(../images/icons/separate_icons/desktop.svg);
 }
 
 .specifications__item:nth-child(3)::before {
-  background-image: url(../../images/icons/separate_icons/lightbulb.svg);
+  background-image: url(../images/icons/separate_icons/lightbulb.svg);
 }
 
 .specifications__item:nth-child(4)::before {
-  background-image: url(../../images/icons/separate_icons/genius.svg);
+  background-image: url(../images/icons/separate_icons/genius.svg);
 }
 
 .specifications__item:nth-child(5)::before {
-  background-image: url(../../images/icons/separate_icons/briefcase.svg);
+  background-image: url(../images/icons/separate_icons/briefcase.svg);
 }
 
 .specifications__item:nth-child(6)::before {
-  background-image: url(../../images/icons/separate_icons/download.svg);
+  background-image: url(../images/icons/separate_icons/download.svg);
 }
 
 .activities__list {
