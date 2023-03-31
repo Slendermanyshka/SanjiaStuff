@@ -52,7 +52,7 @@ a {
   margin-bottom: 50px;
 }
 
-.normal-text, .modal__send-button, .modal__title, .activities__description, .specifications p, .hat button, .footer__innard a {
+.normal-text, .activities__description, .specifications p, .hat button, .footer__innard a {
   font-style: normal;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -84,7 +84,7 @@ a {
   list-style-type: none;
 }
 
-.button, .modal__send-button, .hat button {
+.button, .hat button {
   cursor: pointer;
 }
 
@@ -410,22 +410,6 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 50px 100px;
-}
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .footer__container {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .footer__container {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 60px 76px;
-  }
 }
 
 .footer__innard {
@@ -817,175 +801,154 @@ a {
   pointer-events: none;
 }
 
-.modal {
-  position: absolute;
-  width: 528px;
-  min-height: 581px;
-  background-color: white;
+.contacts-sec {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
 }
 
-.modal__title {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  margin: 0;
-  padding-top: 40px;
-  color: #212121;
+.contact-ul {
+  margin-bottom: 15px;
+  display: flex;
 }
 
-.modal__close-button {
-  width: 30px;
-  height: 30px;
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  border-radius: 50%;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-}
-.modal__close-button:hover svg {
-  fill: #2196F3;
+.contact-item {
+  min-width: 162px;
 }
 
-.modal__label {
+.contacts-icons-container {
   display: flex;
   flex-direction: column;
-  height: 58px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 12px;
-}
-.modal__label p {
-  font-style: normal;
-  font-weight: normal;
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
-  text-align: left;
-}
-.modal__label textarea {
-  resize: none;
+  justify-content: center;
+  align-items: end;
 }
 
-.modal__input {
-  height: 40px;
-  box-sizing: border-box;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 100%;
-  padding-left: 42px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__input:hover, .modal__input :focus {
-  border: 1px solid #2196F3;
-  outline: none;
+.contact-h4 {
+  margin-bottom: 10px;
 }
 
-.modal__textarea-input {
-  width: 100%;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__textarea-input:focus, .modal__textarea-input :hover {
-  border: 1px solid #2196F3;
-  outline: none;
-}
-.modal__textarea-input ::-moz-placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-}
-.modal__textarea-input ::placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
+.contact-div {
+  margin-right: 30px;
 }
 
-.modal__input:focus ~ .modal__input-icon {
-  fill: #2196F3;
+.contact-text {
+  font-weight: 700;
+  color: black;
+  font-size: 15px;
+  line-height: 22.4px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 
-.modal__input-icon {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.modal__input-wrap {
-  position: relative;
-  display: block;
-}
-
-.modal__checkbox {
-  display: inline-flex;
-  margin-top: 25px;
-}
-
-.modal__termsuse-text {
+.contact-form-item {
   display: flex;
-  margin: 0;
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  color: #757575;
-  padding-left: 7px;
-}
-.modal__termsuse-text::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  margin-right: 5px;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
-.modal__check:checked + .modal__termsuse-text::before {
-  background-color: #2196F3;
-  padding: 2px;
+.contact-form-span {
+  font: normal 13px/22px "Open Sans", Arial, Tahoma, sans-serif;
+}
+
+.contact-form-input {
+  border: 0;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  color: #7e7e7e;
+  margin: 5px 0 0;
+  max-width: 100%;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.last {
+  height: 200px;
+}
+
+.send-button {
+  text-align: right;
+  margin-top: 15px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px 50px;
+  background-color: #D10220;
   border: none;
-  background-image: url(../images/Vector.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  transition: 0.3s;
 }
 
-.modal__check {
-  display: none;
+.send-button:hover {
+  opacity: 0.8;
 }
 
-.modal__terms-link {
-  margin-left: 5px;
-  text-decoration-line: underline;
-  color: #2196F3;
-}
-
-.modal__button {
+.contact-icon {
   display: flex;
-  align-items: center;
+  margin-right: 5px;
+  justify-content: center;
+  background-color: #D10220;
+}
+.contact-icon:last-child {
+  margin: 0;
+}
+
+.contact-button {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #D10220;
+  padding: 10px;
+  outline: 0;
+  border: 2px solid #e8ecee;
+  border-radius: 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-button:hover {
+  background-color: #e84545;
+  border-color: #e84545;
+  color: #fff;
+  fill: #fff;
+}
+
+.team-big-sec {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline: 15%;
   justify-content: center;
 }
 
-.modal__send-button {
-  margin-top: 15px;
-  width: 200px;
-  height: 50px;
-  background-color: #2196F3;
-  border: 0px;
-  border-radius: 4px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: bold;
-  line-height: 187%;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: white;
+.person {
+  width: 262px;
+  margin: 15px;
 }
-.modal__send-button:hover, .modal__send-button :focus {
-  background: #188ce8;
+.person h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #2d3033;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.person h5 {
+  text-transform: uppercase;
+  color: #e84545;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.person p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.4px;
+  color: #6c7279;
+  box-sizing: border-box;
+}
+
+.team-img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
